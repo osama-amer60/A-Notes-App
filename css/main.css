@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+body{
+  background-color: rgb(170 170 255);
+  padding: 10px;
+  min-height: 100%;
+  position: relative;
+}
+#container{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 305px 305px 305px 305px ;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}
+#addNewNote , #note {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 300px;
+  padding: 60px;
+  text-align: center;
+  color: rgb(65, 65, 195);
+  cursor: pointer;
+}
+.plus i{
+  padding: 20px;
+  border: 2px dashed ;
+  border-radius: 100%;
+  margin-bottom: 35px;
+}
+#note{
+  padding: 15px 10px;
+  text-align: start;
+  color: black;
+}
+#note h3{
+  height: 20%;
+  word-wrap: break-word;
+  overflow-y:auto;
+  width: 100%;
+}
+#note p {
+  word-wrap: break-word;
+  overflow-y: auto;
+  width: 100%;
+  height: 55%;
+}
+.date{
+  color: rgb(181, 173, 173);
+}
+#setting{
+  text-align:end;
+  position: relative;
+}
+#setting #menu{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  right:25px;
+  color: black;
+  box-shadow: 0 0 6px rgb(0,0,0,0.15);
+  width: 100px;
+  text-align: left;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+  transform-origin: bottom right;
+}
+#setting.show #menu{
+  transform: scale(1);
+}
+#edite:hover {
+  background-color: #bfbbbb;
+}
+#delete:hover{
+  background-color: rgb(255, 65, 65);
+}
+#popContainer{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,0,0,0.5);
+  display: none;
+}
+#messegePopup{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+}
+.deleteMessage{
+  width: 500px;
+}
+.inpoutDetails{
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  left: 34%;
+  top: 23%;
+}
+#close{
+  cursor: pointer;
+}
