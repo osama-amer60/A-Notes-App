@@ -72,7 +72,7 @@ function addNote() {
       popContainer.style.display = "none";
     }
   }else{
-    alert("please fill the fields")
+    alert(Pplease Fill The Fields")
   }
 }
 addBtn.addEventListener("click", addNote);
@@ -93,7 +93,7 @@ function displayNote(arr) {
             <div class="col-3" id="setting"> 
                <i  onclick="showMenu(this)" class="fa fa-ellipsis-h"></i> 
                <div id="menu" class="row p-1">
-                    <div class="col-12" id="edite" onclick="getIndex = editeNote(${i})"> <i class="fa fa-pencil" aria-hidden="true"></i>   Edite </div>
+                    <div class="col-12" id="edite" onclick="getIndex = editeNote(${i})"> <i class="fa fa-pencil" aria-hidden="true"></i>   Edit </div>
                     <div class="col-12 mt-1" id="delete" onclick="getIndexForDelete = deleteNote(${i})"> <i class="fa fa-trash" aria-hidden="true"></i>   Delete </div>
                </div>
             </div>
