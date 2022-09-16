@@ -72,7 +72,7 @@ function addNote() {
       popContainer.style.display = "none";
     }
   }else{
-    alert(Pplease Fill The Fields")
+    alert("please Fill The Fields")
   }
 }
 addBtn.addEventListener("click", addNote);
