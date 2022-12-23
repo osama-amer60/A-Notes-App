@@ -1,6 +1,6 @@
 # A-Notes-App
 
-##Features:
+## Features:
 * Users can add a new Note with the date of creation.
 * Users can update the Note.
 * Users can delete the Note.
